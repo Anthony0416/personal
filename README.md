@@ -1,30 +1,55 @@
-# personal
+## 项目框架
 
-> csw个人网站
+在做这个项目之前寻找对比了很多框架，最后感觉这个框架不论结构还是内容，都比较适合新手去快速上手React。源框架Github：[React-seed](https://github.com/JasonBai007/react-seed)
 
-## Build Setup
+### 熟悉框架
 
-``` bash
-# install dependencies
-npm install
+说是框架，其实个人感觉seed更像一个react的demo。首先查看package.json。划重点：   [animate.css](https://daneden.github.io/animate.css/)   [antd](https://ant.design/docs/react/introduce-cn)   [jquery](http://jquery.cuishifeng.cn/index.html)   [react,react-dom](https://tianxiangbing.github.io/react-cn/docs/getting-started.html)   [react-router](http://www.ruanyifeng.com/blog/2016/05/react_router.html?utm_source=tool.lu)
 
-# serve with hot reload at localhost:8080
-npm run dev
+除此之外，框架中使用 [yarn](https://yarnpkg.com/zh-Hans/)   [less](http://lesscss.cn/)  和  [ES6](http://es6.ruanyifeng.com/)，在开始react项目之前一定要对这些都有所了解。
 
-# build for production with minification
-npm run build
+项目克隆到本地后：
 
-# build for production and view the bundle analyzer report
-npm run build --report
+> 安装Yarn  $ npm install -g yarn
+>
+> 安装依赖  $ yarn
+>
+> 启动服务  $ yarn start
+>
+> 打包文件  $ yarn build
 
-# run unit tests
-npm run unit
+当然用不惯yarn的也可以使用npm install,npm start,npm run build...  
 
-# run e2e tests
-npm run e2e
+但是这里还是**强烈推荐使用yarn**，媲美cnpm的速度，npm一样的强大，打包速度还比npm快...
 
-# run all tests
-npm test
+项目目录：
+
+```
+├── README.md                            // 项目说明文档
+├── webpack.config.js                    // webpack开发配置
+├── webpack.production.config.js         // webpack打包配置
+├── .babelrc                             // babel配置文件
+├── .gitignore         // github上传忽略文件配置
+├── package.json       // 项目配置文件
+├── yarn.lock          // 记录依赖包的具体版本号，保证每个开发的依赖都是一样的
+└── app                // 项目目录
+    ├── dist           // 打包目录
+    ├── src            // 开发目录
+    │   ├── components // 组件目录
+    │   ├── data       // mock假数据存放目录
+    │   ├── images     // 图片目录
+    │   ├── less       // 样式文件目录
+    │   ├── pages      // 页面级jsx目录
+    │   ├── main.jsx   // 页面框架
+    │   └── router.jsx // 路由配置文件
+    ├── favivon.icon   // 页面标题icon
+    └── index.html     // 项目入口文件
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### 踩坑
+
+##### background图片路径问题
+
+webpack中图片配置路径为dist/img/[name].[ext]，在实际打包中，因为react的虚拟Dom插入到index.html中，所以这样的路径相当于站在index的当前目录去寻找dist/img，当然能找到。但是css样式被打包成bundle.css放在dist/css目录下，而写在less中的background-image的实际寻找路径就变成了从当前目录出发的dist/css/dist/img...，所以会出现找到不图片的原因。
+
+解决方案，使用内联样式style={{backgroundImage: '../images/name.jpg'}}把图片放在虚拟Dom中。

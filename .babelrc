@@ -1,14 +1,8 @@
 {
-  "presets": [
-    ["env", { "modules": false }],
-    "stage-2"
-  ],
-  "plugins": ["transform-runtime"],
-  "comments": false,
-  "env": {
-    "test": {
-      "presets": ["env", "stage-2"],
-      "plugins": [ "istanbul" ]
-    }
-  }
+    "presets": [ "es2015", "stage-0", "react"],
+    //antd插件，可以做到组件的按需调用
+    "plugins": [["import", {
+        "libraryName": "antd",
+        "style": true
+    }]]
 }
