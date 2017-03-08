@@ -12,7 +12,7 @@ module.exports = {
         inline: true,
         progress: true,
         contentBase: "./app", 
-        port: 8080
+        port: 8888,
         // 开发过程中可设置代理
         // proxy: {
         //    '/api/**': {
@@ -48,6 +48,6 @@ module.exports = {
         new ExtractTextPlugin("css/bundle.css"),
         new webpack.ProvidePlugin({ $: "jquery" }),
         new webpack.HotModuleReplacementPlugin(),
-        new OpenBrowserPlugin({ url: 'http://localhost:8080/' })
+        new OpenBrowserPlugin({ url: 'http://localhost:8888/' })
     ]
 };

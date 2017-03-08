@@ -4,7 +4,7 @@ import { Router, Route, IndexRoute, Redirect, browserHistory } from 'react-route
 
 // 引入单个页面（包括嵌套的子页面）
 import Init from './main';
-import Login from './pages/login';
+import Login from './pages/welcome';
 import Home from './pages/home';
 import User from './pages/user';
 import Setting from './pages/setting';
