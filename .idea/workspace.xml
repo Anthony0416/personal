@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23198e76-163d-42c2-af47-7d430da5483f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/less/welcome.less" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/components/login/LoginFrom.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/components/login/RegisterFrom.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/less/login.less" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/router.jsx" afterPath="$PROJECT_DIR$/app/src/router.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/pages/login.jsx" afterPath="$PROJECT_DIR$/app/src/pages/welcome.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/less/welcome.less" afterPath="$PROJECT_DIR$/app/src/less/welcome.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/pages/welcome.jsx" afterPath="$PROJECT_DIR$/app/src/pages/welcome.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="welcome.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/pages/welcome.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <caret line="20" column="62" lean-forward="false" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -125,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="welcome.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/less/welcome.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="337">
+              <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -164,8 +159,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="323" />
-    <option name="y" value="73" />
+    <option name="x" value="680" />
+    <option name="y" value="99" />
     <option name="width" value="1010" />
     <option name="height" value="616" />
   </component>
@@ -413,15 +408,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1488960858640</updated>
-      <workItem from="1488960859896" duration="5621000" />
+      <workItem from="1488960859896" duration="9941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5621000" />
+    <option name="totallyTimeSpent" value="9941000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="323" y="73" width="1010" height="616" extended-state="0" />
+    <frame x="680" y="99" width="1010" height="616" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26760563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -533,21 +528,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/less/welcome.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/pages/welcome.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <caret line="20" column="62" lean-forward="false" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/less/welcome.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
