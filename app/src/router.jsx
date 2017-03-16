@@ -15,18 +15,23 @@ import NotFoundPage from './pages/nofind';
 // 配置路由，并将路由注入到id为init的DOM元素中
 ReactDOM.render(
     <Router history={browserHistory} >        
-        <Route path="/login" component = {Login} />
-        <Route path="/" component={Init} >
-            <IndexRoute component={Home}/>
-            <Route path="user" component={User}/>
-            <Route path="setting" component={Setting}/>
-            <Route path="list" component={List}/>
-            <Route path="report" component={Report} />          
-            {/* 404 */}
-            <Route path='404' component={NotFoundPage} />                    
-            {/* 其他重定向到 404 */}
-            <Redirect from='*' to='404' />
-        </Route>
+        <Route path="/" component = {Login} />
+        {/* 404 */}
+        <Route path='404' component={NotFoundPage} />
+        {/* 其他重定向到 404 */}
+        <Redirect from='*' to='404' />
+
+        {/*<Route path="/" component={Init} >*/}
+            {/*<IndexRoute component={Home}/>*/}
+            {/*<Route path="user" component={User}/>*/}
+            {/*<Route path="setting" component={Setting}/>*/}
+            {/*<Route path="list" component={List}/>*/}
+            {/*<Route path="report" component={Report} />*/}
+            {/*/!* 404 *!/*/}
+            {/*<Route path='404' component={NotFoundPage} />*/}
+            {/*/!* 其他重定向到 404 *!/*/}
+            {/*<Redirect from='*' to='404' />*/}
+        {/*</Route>*/}
     </Router>
     , document.querySelector('#init')
 )

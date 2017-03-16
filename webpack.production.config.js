@@ -8,16 +8,16 @@ module.exports = {
         vendors:['react','react-dom','react-router']  //抽取公共框架
     },
     output: {
-        path: __dirname + '/app/dist',
-        publicPath:'dist',  //事实上，这个配置直接影响了图片的输出路径
-        filename: 'js/bundle.js'
+        path: __dirname + '/app',
+        publicPath:'/',  //事实上，这个配置直接影响了图片的输出路径
+        filename: 'dist/js/bundle.js'
     },
     module: {
         loaders: [
             { test: /\.css$/, loader: ExtractTextPlugin.extract('style', 'css') }, 
             { test: /\.less$/, loader: ExtractTextPlugin.extract('css!less') },
             { test: /\.js[x]?$/, exclude: /node_modules/, loader: 'babel' },
-            { test: /\.(png|jpe?g|gif)$/, loader: 'url?limit=8192&name=/img/[name].[ext]' },
+            { test: /\.(png|jpe?g|gif)$/, loader: 'url?limit=8192&name=./dist/img/[name].[ext]' },
             { test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/, loader: 'url' }
         ]
     },
@@ -25,8 +25,8 @@ module.exports = {
         extensions: ['', '.js', '.jsx']
     },
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin('vendors','js/vendors.js'),
-        new ExtractTextPlugin("css/bundle.css"),
+        new webpack.optimize.CommonsChunkPlugin('vendors','dist/js/vendors.js'),
+        new ExtractTextPlugin("dist/css/bundle.css"),
         new webpack.ProvidePlugin({ $: "jquery" }),
         // 压缩配置
         new webpack.optimize.UglifyJsPlugin({
