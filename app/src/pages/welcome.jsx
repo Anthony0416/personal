@@ -16,7 +16,7 @@ export default class Login extends React.Component {
                         <p style={{textAlign: 'center',fontSize: '16px'}}>Chen's Personal Website</p>
                     </div>
                     <p id="link">
-                        <a href="http://blog.chenshiwen.top">Blog</a>&nbsp;/&nbsp;
+                        <a href="http://blog.chenshiwen.cn">Blog</a>&nbsp;/&nbsp;
                         <a href="https://github.com/Anthony0416">Github</a>&nbsp;/&nbsp;
                         <a href="http://weibo.cn/chentong0416">Microblog</a>&nbsp;/&nbsp;
                         <a href="404">About</a>
